@@ -254,3 +254,33 @@ body{
     font-size:var(--smallfontexpand);
     padding:0.48vw 0.87vw 0.48vw 0.87vw;
 }
+/* -------------------------- 404 PAGE -------------------------- */
+#fourzerofouricon{
+    font-size:var(--hugefont);
+    text-align:center;
+    position:absolute;
+    left:0%;
+    top:30%;
+    width:100%;
+}
+#fourzerofourtext{
+    color:var(--darksecondary);
+    font-size:var(--smallfont);
+    font-weight:var(--regular);
+    text-align:center;
+    position:absolute;
+    left:0%;
+    top:45%;
+    width:100%;
+}
+#fourzerofourback{
+    color:var(--darksecondary);
+    font-size:var(--smallfont);
+    font-weight:var(--regular);
+    text-decoration:none;
+    text-align:center;
+    position:absolute;
+    left:0%;
+    top:55%;
+    width:100%;
+}
