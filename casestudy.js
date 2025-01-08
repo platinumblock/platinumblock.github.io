@@ -3,19 +3,20 @@ var html = document.documentElement;
 // Height of page at 100% zoom (in pixels)
 var heightAt100 = 5896 // UPDATE THIS when you change the contents of the page
 var height = heightAt100; 
-// Get height after letting all images load
-setTimeout(() => {
-    height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-    document.getElementById("sidebar").style.height = (height - 400 * (height / heightAt100)) + "px";
-}, 1000);
-// Make list of y cutoffs for sections
 var numerals = ["I", "II", "III", "IV", "V"]
 var ranges = []
 var contents = document.getElementsByClassName("content");
-for(let i = 0; i < contents.length; i++){
-    var n = numerals[i]
-    ranges.push(document.getElementById(n).offsetTop + document.getElementById(n).style.height)
-}
+// Wait for images to load
+setTimeout(() => {
+    // Set height of sidebar
+    height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    document.getElementById("sidebar").style.height = (height - 400 * (height / heightAt100)) + "px";
+    // Make list of y cutoffs for sections
+    for(let i = 0; i < contents.length; i++){
+        var n = numerals[i]
+        ranges.push(document.getElementById(n).offsetTop)
+    }
+}, 1000);
 // On scroll:
 function handleScroll(){
     var scroll = window.scrollY -  150 * (height / heightAt100);
