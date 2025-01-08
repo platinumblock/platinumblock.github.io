@@ -19,7 +19,7 @@ setTimeout(() => {
 }, 1000);
 // On scroll:
 function handleScroll(){
-    var scroll = window.scrollY -  150 * (height / heightAt100);
+    var scroll = window.scrollY -  100 * (height / heightAt100);
     for(let i = 0; i < ranges.length; i++){
         if(scroll > ranges[i] && (i == ranges.length - 1 || scroll < ranges[i + 1])){
             for(let j = 0; j < contents.length; j++){
