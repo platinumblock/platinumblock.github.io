@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
     font-family: "Lexend Deca", serif;
-    background-color:rgb(250,250,250);
+    background-color:var(--lightprimary);
 
-    --darkprimary:rgb(50,50,50);
+    --darkprimary:rgb(50, 50, 50);
     --darksecondary:rgb(150,150,150);
-    --lightprimary:rgb(250,250,250);
+    --lightprimary:rgb(250, 250, 250);
     --lightsecondary:rgb(200,200,200);
 
     --hugefont:3.92vw;
@@ -72,9 +72,12 @@ body{
 }
 .details{
     position:absolute;
-    width:32%;
-    height:23.5vw; /* Only works with this specific image size */
+    width:32.1%;
+    height:23.7vw; /* Only works with this specific image size */
+    font-family: "Lexend Deca", serif;
+    border:none;
     border-radius:var(--borderradius);
+    background:none;
     backdrop-filter:blur(var(--borderradius)) brightness(60%);
     opacity:0;
     transition:0.2s all;
@@ -82,7 +85,6 @@ body{
 .details:hover{
     opacity:1;
     cursor:pointer;
-    transform:scale(1.05);
 }
 .detailsTitle{
     color:var(--lightsecondary);
@@ -113,9 +115,7 @@ body{
     justify-content:center;
     align-items:center;
     position:absolute;
-    left:30%;
     top:60%;
-    width: 40%;
     height:10%;
     background:none;
     border:var(--borderthickness) solid var(--lightsecondary);
@@ -126,6 +126,14 @@ body{
 .detailsView:hover{
     transform:scale(1.05);
 }
+.casestudy{
+    left:30%;
+    width: 40%;
+}
+.notcasestudy{
+    left:34%;
+    width:32%;
+}
 .doorlist{
     left:15%;
     top:70%;
@@ -134,9 +142,16 @@ body{
     left:53%;
     top:70%;
 }
-.idk{
+.converse{
     left:15%;
     top:135%;
+}
+#footer{
+    position:absolute;
+    left:0%;
+    top:200%;
+    width:100%;
+    height:10%;
 }
 /* -------------------------- CASE STUDY PAGE -------------------------- */
 /* Banner */

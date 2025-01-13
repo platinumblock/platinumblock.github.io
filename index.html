@@ -10,8 +10,8 @@
   </head>
   <body>
     <div id = "navbar">
-      <a href = "index.html" class = "link" style = "left:15%; color:var(--dp)">Daniel Lief</a>
-      <a href = "index.html" class = "link" id = "home" style = "left:58%; color:var(--dp)">Home</a>
+      <a href = "index.html" class = "link" style = "left:15%; color:var(--darkprimary)">Daniel Lief</a>
+      <a href = "index.html" class = "link" id = "home" style = "left:58%; color:var(--darkprimary)">Home</a>
       <a href = "about.html" class = "link" style="left:65%;">About</a>
       <a href = "resume.html" class = "link" style="left:72%;">Resume</a>
       <a href = "contact.html" class = "link" style="left:80%;">Contact</a>
@@ -19,17 +19,24 @@
     <div id = "pitch">Hi! I'm Daniel Lief.</div>
     <div id = "subpitch">I'm a UX Designer studying Computer Science at UC Berkeley. My passions in visual design and cognitive-based solutions lead me to design amazing web and mobile products.</div>
     <img src = "doorlist/doorlist.png" class = "work doorlist">
-    <a href = "doorlist.html" class = "details doorlist">
+    <button onclick = "view('doorlist')" class = "details doorlist">
       <div class = "detailsTitle">DoorList</div>
       <div class = "detailsRole">UX Prototyper</div>
-      <div href = "doorlist.html" class = "detailsView">View Case Study →</div>
-    </a>
+      <div class = "detailsView casestudy">View Case Study →</div>
+    </button>
     <img src = "dcyhc/dcyhc.png" class = "work dcyhc">
-    <a href = "dcyhc.html" class = "details dcyhc">
+    <button onclick = "view('dcyhc')" class = "details dcyhc">
       <div class = "detailsTitle">DCYHC</div>
       <div class = "detailsRole">UX Designer</div>
-      <div class = "detailsView">View Case Study →</div>
-    </a>
-    <img src = "food.png" class = "work idk">
+      <div class = "detailsView casestudy">View Case Study →</div>
+    </button>
+    <img src = "converse/converse.png" class = "work converse">
+    <button onclick = "view('converse')" class = "details converse">
+      <div class = "detailsTitle">Converse</div>
+      <div class = "detailsRole">UI/UX Designer</div>
+      <div class = "detailsView notcasestudy">View Details →</div>
+    </button>
+    <div id = "footer"></div>
+    <script src="index.js"></script>
   </body>
 </html>
