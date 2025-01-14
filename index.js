@@ -8,5 +8,5 @@ function view(project){
     if(project == "converse"){
         localStorage.setItem("height100", 3115);
     }
-    window.location.href = project
+    window.location.href = project + ".html";
 }
