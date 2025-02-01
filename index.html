@@ -9,40 +9,55 @@
     <link rel="icon" href="icon.png">
   </head>
   <body>
+    <div id = "topBackground"></div>
     <div id = "navbar">
       <a href = "index.html" class = "link" style = "left:15%; color:var(--darkprimary)">Daniel Lief</a>
       <a href = "index.html" class = "link" id = "home" style = "left:58%; color:var(--darkprimary)">Home</a>
       <a href = "about.html" class = "link" style="left:65%;">About</a>
-      <a href = "resume.html" class = "link" style="left:72%;">Resume</a>
+      <a href = "resume.pdf" class = "link" style="left:72%;">Resume</a>
       <a href = "contact.html" class = "link" style="left:80%;">Contact</a>
     </div>
     <div id = "pitch">Hi! I'm Daniel Lief.</div>
     <div id = "subpitch">I'm a UX Designer studying Computer Science at UC Berkeley. My passions in visual design and cognitive-based solutions lead me to design amazing web and mobile products.</div>
-    <img src = "doorlist/doorlist.png" class = "work doorlist">
-    <button onclick = "view('doorlist')" class = "details doorlist">
-      <div class = "detailsTitle">DoorList</div>
-      <div class = "detailsRole">UX Prototyper</div>
-      <div class = "detailsView casestudy">View Case Study →</div>
-    </button>
-    <img src = "dcyhc/dcyhc.png" class = "work dcyhc">
-    <button onclick = "view('dcyhc')" class = "details dcyhc">
-      <div class = "detailsTitle">DCYHC</div>
-      <div class = "detailsRole">UX Designer</div>
-      <div class = "detailsView casestudy">View Case Study →</div>
-    </button>
-    <img src = "youphoria/youphoria.png" class = "work youphoria">
-    <button onclick = "view('youphoria')" class = "details youphoria">
-      <div class = "detailsTitle">Youphoria</div>
-      <div class = "detailsRole">UX Researcher</div>
-      <div class = "detailsView casestudy">View Case Study →</div>
-    </button>
-    <img src = "converse/converse.png" class = "work converse">
-    <button onclick = "view('converse')" class = "details converse">
-      <div class = "detailsTitle">Converse</div>
-      <div class = "detailsRole">UI/UX Designer</div>
-      <div class = "detailsView notcasestudy">View Details →</div>
-    </button>
+    <div class = "work">
+      <img src = "doorlist/doorlist.png" class = "workImage">
+      <div class = "workTitle">DoorList <span style = "color:orange">★</span></div>
+      <div class = "workRole">UX Prototyper</div>
+      <div class = "workDescription">Prototyped redesigns for a social media app aimed at college students. Focused on boosting in-app engagement and simplifying user flows. Engaged in team research and ideation; created three stages of iterative designs and a final prototype.</div>
+      <button onclick = "view('doorlist')" class = "workAction">View Case Study</button>
+    </div>
+    <div class = "work">
+      <img src = "dcyhc/dcyhc.png" class = "workImage">
+      <div class = "workTitle">DCYHC <span style = "color:orange">★</span></div>
+      <div class = "workRole">UX Designer</div>
+      <div class = "workDescription">Redesigned a non profit organization's external website, streamlining information and increasing user action rates. Worked with a team to test, brainstorm, design two iterations, and implement the final prototype in Squarespace.</div>
+      <button onclick = "view('dcyhc')" class = "workAction">View Case Study</button>
+    </div>
+    <div class = "work">
+      <img src = "youphoria/youphoria.png" class = "workImage">
+      <div class = "workTitle">Youphoria</div>
+      <div class = "workRole">UX Researcher</div>
+      <div class = "workDescription">Worked with a startup health app promoting community and consistency. Researched how to redesign in-app features to make them easier and faster to use. Tested, analyzed, and presented results.</div>
+      <button onclick = "view('youphoria')" class = "workAction">View Case Study</button>
+    </div>
+    <div class = "work">
+      <img src = "converse/converse.png" class = "workImage">
+      <div class = "workTitle">Converse</div>
+      <div class = "workRole">UI/UX Designer</div>
+      <div class = "workDescription">Designed a prototype for a communication app. Personal project.</div>
+      <button onclick = "view('converse')" class = "workAction">View Details</button>
+    </div>
+    <div class = "work">
+      <img src = "lucidide/lucidide.png" class = "workImage">
+      <div class = "workTitle">Lucid IDE</div>
+      <div class = "workRole">UI/UX Designer</div>
+      <div class = "workDescription">Designed a code editor. Personal project.</div>
+      <button onclick = "view('lucidide')" class = "workAction">View Details</button>
+    </div>
     <div id = "footer"></div>
     <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/gKOO5yL3DIHkz6qH/scene.splinecode" id = "spline"></spline-viewer>
+    
   </body>
 </html>
