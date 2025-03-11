@@ -23,6 +23,7 @@ window.onscroll = function (e) {
     var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
     var scrollY = window.scrollY || window.pageYOffset;
     var works = document.getElementsByClassName("work");
+    document.getElementById("scrollIndicator").style.opacity = (1 - 10 * scrollY / height);
     for(var i = 0; i < works.length; i++){
         var newLeft = 115 + (i * 65) - 395 * (scrollY / height)
         works[i].style.left = newLeft + "%";

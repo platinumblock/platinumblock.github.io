@@ -19,6 +19,7 @@ setTimeout(() => {
 var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 function align(){
     var abouts = document.getElementsByClassName("aboutMe");
+    document.getElementById("scrollIndicator").style.opacity = (1 - 30 * window.scrollY / height);
     for(var i = 0; i < abouts.length; i++){
         var top = (40 + 50 * i - (window.scrollY / height) * 390);
         abouts[i].style.top = top + "%";

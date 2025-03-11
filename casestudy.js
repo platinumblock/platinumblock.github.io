@@ -17,6 +17,11 @@ setTimeout(() => {
     }
 }, 100);
 function handleScroll(){
+    if(window.scrollY > 0){
+        document.getElementById("scrollIndicator2").style.display = "none";
+    }else{
+        document.getElementById("scrollIndicator2").style.display = "block";
+    }
     var scroll = window.scrollY -  100 * (height / heightAt100);
     document.getElementById("bannerLeft").style.left = (-1.15 * 100 * (window.scrollY / window.innerHeight)) + "%";
     document.getElementById("bannerRight").style.left = (50 + 1.15 * 100 * (window.scrollY / window.innerHeight)) + "%";

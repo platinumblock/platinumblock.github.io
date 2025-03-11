@@ -378,3 +378,60 @@ body{
     width:100%;
     left:0%;
 }
+#loading{
+    position:absolute;
+    left:0%;
+    top:0%;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(250,250,250);
+    color:var(--darksecondary);
+    font-size:var(--mediumfont);
+    z-index:100000;
+    font-weight:var(--regular);
+    animation:load 1.5s forwards;
+}
+@keyframes load{
+    0%{opacity:1;}
+    80%{opacity:1;}
+    99%{opacity:0;}
+    100%{opacity:0;display:none;}
+}
+#scrollIndicator{
+    position:absolute;
+    left:0%;
+    top:90%;
+    width:100%;
+    text-align:center;
+    color:var(--darksecondary);
+    font-size:var(--smallfont);
+    font-weight:var(--regular);
+    animation:bounce 3s infinite;
+    transition:0.2s all;
+}
+@keyframes bounce{
+    0%{transform:translateY(0%);}
+    50%{transform:translateY(-50%);}
+    100%{transform:translateY(0%);}
+}
+#scrollIndicator2{
+    position:absolute;
+    left:0%;
+    top:90%;
+    width:100%;
+    text-align:center;
+    color:var(--lightsecondary);
+    font-size:var(--smallfont);
+    font-weight:var(--regular);
+    animation:bounce 3s infinite;
+    transition:0.2s all;
+    z-index:100000;
+}
+@keyframes bounce{
+    0%{transform:translateY(0%);}
+    50%{transform:translateY(-50%);}
+    100%{transform:translateY(0%);}
+}
